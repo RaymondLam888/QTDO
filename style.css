@@ -1,0 +1,84 @@
+body{
+  background-image: url(https://user-images.githubusercontent.com/106653257/266827888-70971d6b-f30e-46c8-aafa-ba1662d1c4b3.png);
+}
+
+#score{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  padding: 10px;
+  border: 1px solid #000;
+  font-size: 60px;
+  color: white;
+  width: 50%;
+  font-family: arial;
+  background-image: url(https://user-images.githubusercontent.com/106653257/266838257-60cdc1af-ccb0-463d-900b-27f32e287313.png);
+  background-size: cover;
+}
+
+body{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.image{
+      position: relative;
+      width: 240px;
+      height: 50px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease;
+    }
+    
+    .score-summary {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+footer{
+  margin-top: 40px;
+  display: flex;
+  flex-direction : row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button{
+  width: 100px;
+  height: 100%;
+}
+
+footer .dropdown {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.image.transformed {
+      animation: scale-up-vertical-center 0.4s;
+    }
+
+    @keyframes scale-up-vertical-center {
+      0% {
+        transform: scaleY(0.2);
+      }
+      100% {
+        transform: scaleY(1);
+      }
+    }
