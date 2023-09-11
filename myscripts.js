@@ -124,33 +124,24 @@ function reset() {
 
 /*------------------------------*/
 function goToSelectedPage() {
-    var dropdown = document.getElementById("dropdown");
-    var selectedPage = dropdown.value;
-    if (selectedPage) {
-      window.location.href = selectedPage;
-    }
-  }
+  var selectedPage = document.getElementById("dropdown").value;
+  window.location.href = selectedPage;
+}
 
-  function goToSelectedPage() {
-    var dropdown = document.getElementById("dropdown");
-    var selectedPage = dropdown.value;
-    if (selectedPage) {
-      window.location.href = selectedPage + ".html";
-    }
-  }
+window.onload = function() {
+  resetPage();
+};
 
-  // 获取当前页面的文件名（不包括扩展名）
-  var currentPage = location.pathname.split("/").slice(-1)[0].split(".")[0];
-  
-  // 设置下拉列表的选中项为当前页面
+function resetPage() {
+  var currentPage = window.location.pathname.split("/").slice(-1)[0];
   var dropdown = document.getElementById("dropdown");
-  dropdown.value = currentPage;
-
-  function goToSelectedPage() {
-    var selectedPage = document.getElementById("dropdown").value;
-    window.location.href = selectedPage;
+  for (var i = 0; i < dropdown.options.length; i++) {
+    if (dropdown.options[i].value === currentPage) {
+      dropdown.selectedIndex = i;
+      break;
+    }
   }
-
+}
 
   window.onload = function() {
     resetPage();
