@@ -6,29 +6,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QTDO Page2</title>
   <link rel="stylesheet" href="style.css">
-  <script src="myscripts.js"></script> 
 </head>
 <body>
-  <div id="score">0</div>
+  <div id="score">總分：0</div>
   <div class="container">
-        <img id="image1" class="image" src="https://user-images.githubusercontent.com/106653257/266832214-11af9f98-0649-48cc-a24e-d78811deb7d0.png" onclick="calculateScore('image1')">
-    <img id="image2" class="image" src="https://user-images.githubusercontent.com/106653257/266832215-3f32d5d3-7d33-4b58-b027-deb01128e2a4.png" onclick="calculateScore('image2')">
-    <img id="image3" class="image" src="https://user-images.githubusercontent.com/106653257/266832217-210cf592-79f0-4fc3-9e0d-b00b7dc8da21.png" onclick="calculateScore('image3')">
-    <img id="image4" class="image" src="https://user-images.githubusercontent.com/106653257/266832218-03ae949f-3abf-479b-a027-be565665b47b.png" onclick="calculateScore('image4')">
-    <img id="image5" class="image" src="https://user-images.githubusercontent.com/106653257/266832219-c3c3cf3d-582e-4133-b6eb-a25cd93b1145.png" onclick="calculateScore('image5')">
-    <img id="image6" class="image" src="https://user-images.githubusercontent.com/106653257/266832220-1f8d29be-efaa-4946-8f96-924897f96e6e.png" onclick="calculateScore('image6')">
-    <img id="image7" class="image" src="https://user-images.githubusercontent.com/106653257/266832223-5a0b45ff-007d-4a8c-98b6-10cbdd35878f.png" onclick="calculateScore('image7')">
-    <img id="image8" class="image" src="https://user-images.githubusercontent.com/106653257/266832212-b1edb00b-91a0-4223-aaa8-295a05853c1d.png" onclick="calculateScore('image8')">
-  </div>
-  <footer>
-    <button onclick="reset()">重置</button>
-    <div id="scoreTable" class="dropdown" onchange="goToSelectedPage()">
-  <select id="dropdown">
-    <option value="index.html">計分表1</option>
-    <option value="index2.html">計分表2</option>
-    <option value="index3.html">計分表3</option>
-  </select>
-  </footer>
+    <div class="card" onclick="flipCard(this, 10)" data-score="10">
+      <div class="card-inner">
+        <div class="card-front">
+          Answer 1
+        </div>
+        <div class="card-back">
+          Score 10
+        </div>
+      </div>
+</div>
+    <div class="card" onclick="flipCard(this, 20)" data-score="20">
+      <div class="card-inner">
+        <div class="card-front">
+          Answer 2
+        </div>
+        <div class="card-back">
+          Score 20
+        </div>
+      </div>
+</div>
+    <div class="card" onclick="flipCard(this, 30)" data-score="30">
+      <div class="card-inner">
+        <div class="card-front">
+          Answer 3
+        </div>
+        <div class="card-back">
+          Score 30
+        </div>
+      </div>
+    </div>
+    <div class="card" onclick="flipCard(this, 40)" data-score="40">
+      <div class="card-inner">
+        <div class="card-front">
+          Answer 4
+        </div>
+        <div class="card-back">
+          Score 40
+        </div>
+      </div>
+    </div>
+    <div class="card" onclick="flipCard(this, 50)" data-score="50">
+      <div class="card-inner">
+        <div class="card-front">
+          Answer 5
+        </div>
+        <div class="card-back">
+          Score 50
+        </div>
+      </div>
+</div>
+    <div class="card" onclick="flipCard(this, 60)" data-score="60">
+      <div class="card-inner">
+        <div class="card-front">
+          Answer 6
+        </div>
+        <div class="card-back">
+          Score 60
+        </div>
+      </div>
+</div>
+    <div class="card" onclick="flipCard(this, 70)" data-score="70">
+      <div class="card-inner">
+        <div class="card-front">
+          Answer 7
+        </div>
+        <div class="card-back">
+          Score 70
+        </div>
+      </div>
+    </div>
+    <div class="card" onclick="flipCard(this, 80)" data-score="80">
+      <div class="card-inner">
+        <div class="card-front">
+          Answer 8
+        </div>
+        <div class="card-back">
+          Score 80
+        </div>
+      </div>
+    </div>
 
+  </div>
+    <div class="container2">
+    <div class="pattern-container left">
+      <div class="pattern"></div>
+      <div class="pattern"></div>
+      <div class="pattern"></div>
+    </div>
+
+    <div class="pattern-container right">
+      <div class="pattern"></div>
+      <div class="pattern"></div>
+      <div class="pattern"></div>
+    </div>
+  </div>
+  <div class="button-container left">
+    <button class="button" onclick="showPattern('left')">左 +</button>
+    <button class="button" onclick="hidePattern('left')">左 -</button>
+  </div>
+  <div class="reset">
+    <button id="reset-button" onclick="resetCards()">重置</button>
+    <div id="scoreTable" class="dropdown" onchange="goToSelectedPage()">
+        <select id="dropdown">
+          <option value="index.html">計分表1</option>
+          <option value="index2.html">計分表2</option>
+          <option value="index3.html">計分表3</option>
+        </select>
+      </div>
+  </div>
+  <div class="button-container right">
+    <button class="button" onclick="showPattern('right')">右 +</button>
+    <button class="button" onclick="hidePattern('right')">右 -</button>
+  </div>
+  <script src="myscripts.js"></script> 
 </body>
 </html>

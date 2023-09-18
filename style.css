@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-  width: 520px;
+  width: 1000px;
   border: 1px solid #000;
   display: flex;
   flex-wrap: wrap;
