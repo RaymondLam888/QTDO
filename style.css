@@ -12,15 +12,16 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px auto;
-  padding: 10px;
+  padding: 50px;
   border: 1px solid #000;
-  font-size: 60px;
+  font-size: 30px;
   color: white;
-  width: 50%;
   font-family: arial;
   background-image: url(https://user-images.githubusercontent.com/106653257/266838257-60cdc1af-ccb0-463d-900b-27f32e287313.png);
   background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container{
