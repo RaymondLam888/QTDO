@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-  width: 1000px;
+  width: 1980px;
   border: 1px solid #000;
   display: flex;
   flex-wrap: wrap;
@@ -23,8 +23,8 @@ body{
 }
 
 .card {
-  width: 240px;
-  height: 50px;
+  width: 960px;
+  height: 200px;
   perspective: 1000px;
   cursor: pointer;
   margin: 10px;
