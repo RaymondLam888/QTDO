@@ -9,8 +9,18 @@ body{
 
 #score {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  font-size: 24px;
+  margin: 50px auto;
+  padding: 10px;
+  border: 1px solid #000;
+  font-size: 60px;
+  color: white;
+  width: 50%;
+  font-family: arial;
+  background-image: url(https://user-images.githubusercontent.com/106653257/266838257-60cdc1af-ccb0-463d-900b-27f32e287313.png);
+  background-size: cover;
 }
 
 .container{
