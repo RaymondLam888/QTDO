@@ -71,25 +71,3 @@ function hidePattern(side) {
     }
   }
 }
-
-/*-----------------*/
-
-function goToSelectedPage() {
-  var selectedPage = document.getElementById("dropdown").value;
-  window.location.href = selectedPage;
-}
-
-window.onload = function() {
-  resetPage();
-};
-
-function resetPage() {
-  var currentPage = window.location.pathname.split("/").slice(-1)[0];
-  var dropdown = document.getElementById("dropdown");
-  for (var i = 0; i < dropdown.options.length; i++) {
-    if (dropdown.options[i].value === currentPage) {
-      dropdown.selectedIndex = i;
-      break;
-    }
-  }
-}
