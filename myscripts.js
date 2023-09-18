@@ -17,9 +17,9 @@ function flipCard(card, score) {
 function resetCards() {
   totalScore = 0;
   scoreElement.textContent = '總分：0';
-  isFlipping = false; // 重置翻转状态
+  isFlipping = false; // 重置翻轉
 
-  // 将所有卡片的翻转样式移除并重新绑定点击事件
+  // 將所有卡片的翻轉樣式移除並重新綁定點擊事件
   const cards = document.querySelectorAll('.card');
   cards.forEach(card => {
     card.classList.remove('flipped');
@@ -29,7 +29,7 @@ function resetCards() {
   });
 }
 
-// 页面加载完成后执行一次，为卡片绑定点击事件
+// 頁面加載完成後執行一次，為卡片綁定點擊事件
 window.addEventListener('DOMContentLoaded', function() {
   const cards = document.querySelectorAll('.card');
   cards.forEach(card => {
@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('DOMContentLoaded', function() {
   var patterns = document.querySelectorAll('.pattern');
   patterns.forEach(function(pattern) {
-    pattern.style.display = 'none'; // 默认隐藏所有图像
+    pattern.style.display = 'none'; // 默認隱藏所有圖像
   });
 });
 
