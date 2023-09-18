@@ -5,6 +5,11 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(https://user-images.githubusercontent.com/106653257/266827888-70971d6b-f30e-46c8-aafa-ba1662d1c4b3.png);
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }    
 
 #score {
