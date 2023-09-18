@@ -23,8 +23,9 @@ body{
 }
 
 .card {
-  width: 49%;
-  height: 200px;
+  width: calc(50% - 20px);
+  height: auto;
+  aspect-ratio: 240/50;
   perspective: 1000px;
   cursor: pointer;
   margin: 10px;
@@ -57,6 +58,9 @@ body{
       color: white;
       background-image: url(https://user-images.githubusercontent.com/106653257/268507884-e628698e-8be1-45dc-a457-68533f3727e9.png);
       background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
     .card-back {
@@ -69,6 +73,9 @@ body{
       color: white;
       background-image: url(https://user-images.githubusercontent.com/106653257/268507884-e628698e-8be1-45dc-a457-68533f3727e9.png);
       background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
 /*--------------------*/
