@@ -1,3 +1,49 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
 body{
   width: 100%;
   margin: 0 auto;
@@ -7,9 +53,29 @@ body{
   align-items: center;
   background-image: url(https://user-images.githubusercontent.com/106653257/266827888-70971d6b-f30e-46c8-aafa-ba1662d1c4b3.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
 }    
+
+.header{
+  width: 95%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.header img{
+  height: 70%;
+}
+
+.topic{
+  color: white;
+  font-size: 100px;
+}
+
 
 #score {
   display: flex;
@@ -27,9 +93,26 @@ body{
   background-position: center;
 }
 
+/*--------------------*/
+.container2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pattern-container.left {
+  width: 10%;
+  bottom: 200px;
+  display: flex;
+  flex-direction:column;
+  align-items: stretch;
+  align-items: center;
+}
+
 .container{
   width: 80%;
-  border: 1px solid #000;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -92,65 +175,56 @@ body{
       background-position: center;
     }
 
-/*--------------------*/
-container2{
-  border: 1px solid #000;
+.pattern-container.right {
+  width: 10%;
+  bottom: 200px;
+  display: flex;
+  flex-direction:column;
+  align-items: stretch;
+  align-items: center;
 }
-
-    .pattern-container.left {
-      position: absolute;
-      bottom: 200px;
-      display: flex;
-      flex-direction:column;
-      align-items: stretch;
-      left: 20px;
-    }
-
-    .pattern-container.right {
-      position: absolute;
-      bottom: 200px;
-      display: flex;
-      flex-direction:column;
-      align-items: stretch;
-      right: 20px;
-    }
 
     .pattern {
       width: 100px;
       height: 100px;
-      margin-right: 10px;
+      margin-bottom: 40px;
       display: none;
       background-size: cover;
       background-image: url(https://cdn3.iconfinder.com/data/icons/simple-web-navigation/165/cross-512.png);
     }
 
     .button-container.left {
-      position: fixed;
       bottom: 0px;
       left: 20px;
     }
 
     .button-container.right {
-      position: fixed;
       bottom: 0px;
       right: 20px;
     }
 
     .button {
-      display: block;
       width: 100px;
       height: 30px;
       margin-bottom: 10px;
     }
 
+
+.footer{
+  width: 95%;
+  height: 200px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+}
+    
 .reset{
-  width: 520px;
+  width: calc(100%/3);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  position: fixed;
-  bottom: 0px;
 }
 
 #reset-button{

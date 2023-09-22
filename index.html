@@ -8,95 +8,100 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="score">總分：0</div>
-  <div class="container">
-    <div class="card" onclick="flipCard(this, 10)" data-score="10">
-      <div class="card-inner">
-        <div class="card-front">
-          Description 1
-        </div>
-        <div class="card-back">
-          Answer+Score 10
-        </div>
-      </div>
-</div>
-    <div class="card" onclick="flipCard(this, 20)" data-score="20">
-      <div class="card-inner">
-        <div class="card-front">
-          Description 5
-        </div>
-        <div class="card-back">
-          Answer+Score 50
-        </div>
-      </div>
-</div>
-    <div class="card" onclick="flipCard(this, 30)" data-score="30">
-      <div class="card-inner">
-        <div class="card-front">
-          Description 2
-        </div>
-        <div class="card-back">
-          Answer+Score 20
-        </div>
-      </div>
-    </div>
-    <div class="card" onclick="flipCard(this, 40)" data-score="40">
-      <div class="card-inner">
-        <div class="card-front">
-          Description 6
-        </div>
-        <div class="card-back">
-          Answer+Score 60
-        </div>
-      </div>
-    </div>
-    <div class="card" onclick="flipCard(this, 50)" data-score="50">
-      <div class="card-inner">
-        <div class="card-front">
-          Description 3
-        </div>
-        <div class="card-back">
-          Answer+Score 30
-        </div>
-      </div>
-</div>
-    <div class="card" onclick="flipCard(this, 60)" data-score="60">
-      <div class="card-inner">
-        <div class="card-front">
-          Description 7
-        </div>
-        <div class="card-back">
-          Answer+Score 70
-        </div>
-      </div>
-</div>
-    <div class="card" onclick="flipCard(this, 70)" data-score="70">
-      <div class="card-inner">
-        <div class="card-front">
-          Description 4
-        </div>
-        <div class="card-back">
-          Answer+Score 40
-        </div>
-      </div>
-    </div>
-    <div class="card" onclick="flipCard(this, 80)" data-score="80">
-      <div class="card-inner">
-        <div class="card-front">
-          Description 8
-        </div>
-        <div class="card-back">
-          Answer+Score 80
-        </div>
-      </div>
-    </div>
-
+  <div class="header">
+    <img src="https://user-images.githubusercontent.com/106653257/269917406-c3e5e630-fbda-4708-b9f9-bc0de1615a53.png" alt="">
+    <div id="score">總分：0</div>
+    <div class="topic">CS大戰</div>
   </div>
-    <div class="container2">
+
+  <div class="container2">
     <div class="pattern-container left">
       <div class="pattern"></div>
       <div class="pattern"></div>
       <div class="pattern"></div>
+    </div>
+
+    <div class="container">
+      <div class="card" onclick="flipCard(this, 10)" data-score="10">
+        <div class="card-inner">
+          <div class="card-front">
+            Description 1
+          </div>
+          <div class="card-back">
+            Answer+Score 10
+          </div>
+        </div>
+  </div>
+      <div class="card" onclick="flipCard(this, 20)" data-score="20">
+        <div class="card-inner">
+          <div class="card-front">
+            Description 5
+          </div>
+          <div class="card-back">
+            Answer+Score 50
+          </div>
+        </div>
+  </div>
+      <div class="card" onclick="flipCard(this, 30)" data-score="30">
+        <div class="card-inner">
+          <div class="card-front">
+            Description 2
+          </div>
+          <div class="card-back">
+            Answer+Score 20
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this, 40)" data-score="40">
+        <div class="card-inner">
+          <div class="card-front">
+            Description 6
+          </div>
+          <div class="card-back">
+            Answer+Score 60
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this, 50)" data-score="50">
+        <div class="card-inner">
+          <div class="card-front">
+            Description 3
+          </div>
+          <div class="card-back">
+            Answer+Score 30
+          </div>
+        </div>
+  </div>
+      <div class="card" onclick="flipCard(this, 60)" data-score="60">
+        <div class="card-inner">
+          <div class="card-front">
+            Description 7
+          </div>
+          <div class="card-back">
+            Answer+Score 70
+          </div>
+        </div>
+  </div>
+      <div class="card" onclick="flipCard(this, 70)" data-score="70">
+        <div class="card-inner">
+          <div class="card-front">
+            Description 4
+          </div>
+          <div class="card-back">
+            Answer+Score 40
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this, 80)" data-score="80">
+        <div class="card-inner">
+          <div class="card-front">
+            Description 8
+          </div>
+          <div class="card-back">
+            Answer+Score 80
+          </div>
+        </div>
+      </div>  
     </div>
 
     <div class="pattern-container right">
@@ -105,6 +110,8 @@
       <div class="pattern"></div>
     </div>
   </div>
+
+<div class="footer">
   <div class="button-container left">
     <button class="button" onclick="showPattern('left')">左 +</button>
     <button class="button" onclick="hidePattern('left')">左 -</button>
@@ -123,6 +130,9 @@
     <button class="button" onclick="showPattern('right')">右 +</button>
     <button class="button" onclick="hidePattern('right')">右 -</button>
   </div>
+
+</div>
+
   <script src="myscripts.js"></script> 
 </body>
 </html>
