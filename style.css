@@ -156,6 +156,9 @@ body{
       background-repeat: no-repeat;
       background-position: center;
       font-size: 3vw;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .card-back {
@@ -171,8 +174,9 @@ body{
       background-repeat: no-repeat;
       background-position: center;
       font-size: 1.5vw;
-      overflow-wrap: break-word;
-      word-wrap: break-word;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .card-back p{
