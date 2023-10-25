@@ -283,4 +283,5 @@ body{
   border-radius: 1rem;
   text-align: center;
   font-size: 1.5vh;
+  cursor: pointer;
 }
