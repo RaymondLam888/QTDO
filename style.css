@@ -61,7 +61,7 @@ body{
 
 .header{
   width: 95%;
-  height: 10%;
+  height: 15%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -69,7 +69,7 @@ body{
 }
 
 .header img{
-  height: 70%;
+  height: 8vw;
 }
 
 #score {
@@ -79,7 +79,7 @@ body{
   justify-content: center;
   width: 20vw;
   height: 5vh;
-  font-size: 2em;
+  font-size: 2vw;
   color: white;
   font-family: arial;
   background-image: url(https://user-images.githubusercontent.com/106653257/266838257-60cdc1af-ccb0-463d-900b-27f32e287313.png);
@@ -180,22 +180,8 @@ body{
     }
 
     .card-back p{
-      margin: 50px;
+      margin: 80px;
     }
-
-/* .btn {
-  $shadow: .3rem .3rem .6rem var(--greyLight-2), -.2rem -.2rem .5rem var(--white);
-  width: 5rem;
-  height: 4rem;
-  border-radius: 1rem;
-  box-shadow: $shadow;
-  justify-self: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: .3s ease;
-} */
 
 .pattern-container {
   width: 10%;
@@ -218,11 +204,15 @@ body{
     .button-container.left {
       bottom: 0px;
       left: 20px;
+      display: flex;
+      justify-content: space-between;
     }
 
     .button-container.right {
       bottom: 0px;
       right: 20px;
+      display: flex;
+      justify-content: space-between;
     }
 
     .button {
@@ -234,12 +224,29 @@ body{
 
 .footer{
   width: 80%;
-  height: 10%;
+  height: 5%;
   display: flex;
   flex-direction:row;
   justify-content: space-between;
   align-items: center;
-  
+  margin-bottom: 20px;
+}
+
+.button {
+  width: 5vw;
+  height: 3vh;
+  border-radius: 1rem;
+  box-shadow: $shadow;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s ease;
+  margin: 5px;
+  font-weight: 800;
+  font-size: 1.5vw;
+  color: gray;
 }
 
 .reset{
@@ -247,18 +254,33 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
 #reset-button{
-  width: 100px;
-  height: 30px;
-  margin-bottom: 10px;
-  bottom: 0px;
+  width: 8vw;
+  height: 3vh;
+  border-radius: 1rem;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s ease;
+  margin: 5px;
+  font-weight: 300;
+  font-size: 1.5vh;
+  background-color: rgb(232, 95, 115);
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #dropdown{
-  width: 100px;
-  height: 30px;
-  margin-bottom: 10px;
+  width: 8vw;
+  height: 3vh;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.5vh;
 }
