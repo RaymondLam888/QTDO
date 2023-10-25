@@ -46,11 +46,13 @@ table {
 
 body{
   width: 100%;
+  height: 100vh;
   margin: 0 auto;
   font-family: arial;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   background-image: url(https://user-images.githubusercontent.com/106653257/266827888-70971d6b-f30e-46c8-aafa-ba1662d1c4b3.png);
   background-size: cover;
   background-repeat: repeat;
@@ -61,8 +63,7 @@ body{
   width: 95%;
   height: 150px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 20px;
 }
@@ -71,26 +72,21 @@ body{
   height: 70%;
 }
 
-.topic{
-  color: white;
-  font-size: 100px;
-}
-
-
 #score {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
-  font-size: 30px;
+  width: 200px;
+  height: 60px;
+  font-size: 2em;
   color: white;
   font-family: arial;
   background-image: url(https://user-images.githubusercontent.com/106653257/266838257-60cdc1af-ccb0-463d-900b-27f32e287313.png);
   background-size: cover;
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  margin-left: 106.32px;
 }
 
 /*--------------------*/
@@ -151,7 +147,7 @@ body{
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1em;
+      font-size: 3em;
       color: white;
       background-image: url(https://user-images.githubusercontent.com/106653257/268507884-e628698e-8be1-45dc-a457-68533f3727e9.png);
       background-size: cover;
@@ -165,14 +161,19 @@ body{
       transform: rotateX(180deg);
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-size: 1em;
+      /* justify-content: center; */
+      justify-content: space-between;
+      font-size: 2em;
       color: white;
       background-image: url(https://user-images.githubusercontent.com/106653257/268507884-e628698e-8be1-45dc-a457-68533f3727e9.png);
       background-size: cover;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+    }
+
+    .card-back p{
+      margin: 50px;
     }
 
 .pattern-container.right {
@@ -211,8 +212,8 @@ body{
 
 
 .footer{
-  width: 95%;
-  height: 200px;
+  width: 80%;
+  margin-top: 20px;
   display: flex;
   flex-direction:row;
   justify-content: space-between;

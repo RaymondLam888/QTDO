@@ -76,7 +76,9 @@ function hidePattern(side) {
 
 function goToSelectedPage() {
   var selectedPage = document.getElementById("dropdown").value;
-  window.location.href = selectedPage;
+  if (selectedPage !== window.location.href) {
+    window.location.href = selectedPage;
+  }
 }
 
 window.onload = function() {
@@ -86,10 +88,20 @@ window.onload = function() {
 function resetPage() {
   var currentPage = window.location.pathname.split("/").slice(-1)[0];
   var dropdown = document.getElementById("dropdown");
+  var foundMatch = false;
   for (var i = 0; i < dropdown.options.length; i++) {
     if (dropdown.options[i].value === currentPage) {
       dropdown.selectedIndex = i;
+      foundMatch = true;
       break;
     }
   }
+  if (!foundMatch) {
+    var option = document.createElement("option");
+    option.value = currentPage;
+    option.text = currentPage;
+    dropdown.add(option);
+    dropdown.selectedIndex = dropdown.options.length - 1;
+  }
 }
+
